@@ -1,0 +1,65 @@
+
+body{
+    font-size: 20px;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.personal_details label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+.personal_details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    height: 30px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal_details input[type="text"],
+.personal_details input[type="number"],
+.personal_details select {
+    width: 200px;
+    margin-right: 20px;
+}
+
+#symptoms_or_disease_input {
+    margin-left: 20px;
+    width: 30%;
+}
+.symp_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+form {
+    padding: 20px;
+}
+
+div.output>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.output>table{
+    width: -webkit-fill-available;
+}
+div.output>table>tr>td{
+    text-align: center;
+}
