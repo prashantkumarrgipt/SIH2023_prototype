@@ -2,6 +2,8 @@
 <head>
     <title>Ayush Ayurvedic Remedy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+    
 </head>
 <body>
     <h1>AYUSH AYURVEDIC REMEDY</h1>
@@ -24,11 +26,25 @@
     
     <div class="symp_input">
         <label for="symptoms_or_disease">Type your symptoms or disease:</label>
-        <input type="text" id="symptoms_or_disease_input" name="symptoms_or_disease"><br><br>
+        <!-- <input type="text" id="symptoms_or_disease_input" name="symptoms_or_disease"> -->
+        <select id="symptoms_or_disease_input" class="symptoms_or_disease_class" name="symptoms_or_disease"
+            style="font-size: 18px;">
+            <option value="Diabetes">Diabetes</option>
+            <option value="Fever">Fever</option>
+            <option value="Malaria">Malaria</option>
+        </select>
+        
+        <br><br>
+
     </div>
         <input type="submit" style="font-size: 16px;display: flex;margin: auto;" value="Submit">
     </form>
 
+    <!-- <script>
+        jQuery('.symptoms_or_disease_class').chosen();
+    </script> -->
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
 </body>
 </html>
